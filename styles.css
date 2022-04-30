@@ -1,0 +1,126 @@
+body {
+    background-color: #202020;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+button {
+    transition: box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #FFFFFF;
+}
+
+.section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.loader {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+}
+
+tr td:nth-child(3), td:last-child {
+    text-align: right;
+}
+
+.table__name, .table__telno {
+    width: 35%;
+}
+
+.table__delete, .table__edit {
+    width: 15%;
+}
+
+.save-name, .save-telno {
+    width: 50px;
+}
+
+.buttons__delete {
+    background-color: #ED3024;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttons__edit, .save-button {
+    background-color: #3137C9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.reset, .button-submit {
+    width: 100%;
+    background-color: #3137C9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.reset {
+    margin-bottom: 20px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.form {
+    width: 50%;
+    margin: 20px auto;
+    height: fit-content;
+    padding: 15px 25px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #121212;
+    transition: 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin: 10px 0;
+}
+
+.button-submit {
+    margin-top: 10px;
+}
+
+@media(min-width: 425px) {
+    .save-name, .save-telno {
+        width: 85%;
+    }
+}
+
+@media(min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    td {
+        padding: 5px;
+    }
+
+    .buttons__delete {
+        margin-right: 15px;
+    }
+}
